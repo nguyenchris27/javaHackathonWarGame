@@ -39,19 +39,23 @@ Random random = new Random();
     }
 
     public void war(Card player1card, Card player2card) {
-        System.out.printf("\n--- Player drew ---\n%s", player1card.returnCard());
+        System.out.printf("\n\n\n\n--- Player drew ---\n%s", player1card.returnCard());
         System.out.printf("\n--- CPU drew ---\n%s", player2card.returnCard());
 
         if (player1card.getRank() > player2card.getRank()) {
-            System.out.println("\n--- Player wins! ---\n");
+            System.out.println("\n--- Player wins! ---\n\n\n\n");
         }
 
         else if (player1card.getRank() < player2card.getRank()) {
-            System.out.println("\n--- CPU wins! ---\n");
+            System.out.println("\n--- CPU wins! ---\n\n\n\n");
+        }
+
+        else if (player1card.getRank() == player2card.getRank()) {
+            System.out.println("\n--- TIE!!! WHAT ARE THE ODDS?? ---\n\n\n\n");
         }
 
         else {
-            System.out.println("\n idk bro try again \n");
+            System.out.println("\n error: idk what happened try again \n\n\n\n");
         }
     }
 }

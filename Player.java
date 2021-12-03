@@ -51,7 +51,7 @@ Random random = new Random();
         }
 
         else if (player1card.getRank() == player2card.getRank()) {
-            System.out.println("\n--- TIE!!! WHAT ARE THE ODDS?? ---\n\n\n\n");
+            System.out.println("\n--- TIE!!! ---\n\n\n\n");
         }
 
         else {
